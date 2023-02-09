@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Today's Weather ⛅</title>
+</head>
+<body style="text-align: center;">
+    <div>
+        <form onsubmit = "handlesubmit(event)">
+            <div>
+                <input type="text" id="city" placeholder="Enter Location..."> 
+                <button type="submit" id="search_button">Search</button>
+            </div>
+        </form>
+        <div class="weather-status" style="padding-top: 0px;">
+            <div class="head">
+                <h1 id="show_city"></h1>
+                <h1>, <span id="country"></span></h1>
+                <img id="icon" src="" alt="">
+            </div>
+            <div  class="foot">
+                <h3><span id="show_temperature"></span> &deg;C</h3>
+                <h3><span id=""></span></h3>
+                <h3><span id="windspeed"></span> km/h</h3>
+                <h3 id="weather_status" class="lead"></h3>
+            </div>            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
